@@ -1,0 +1,9 @@
+<h2>RFID List</h2>
+
+
+
+<div ng-repeat="(id,data) in dataFeed">
+	RFID # {{data.user}}  Logged @ {{data.lastModified | date : 'medium'}}<br /><br />
+</div>
+
+<button class="btn btn-danger" ng-click="removeData()">Remove All</button>
